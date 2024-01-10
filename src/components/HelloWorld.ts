@@ -7,5 +7,4 @@ export class HelloWorld extends LitElement {
     return html`<p>Hello, world!</p>`;
   }
 }
-
-customElements.define('hello-world', HelloWorld);
+customElements.define('hello-world', HelloWorld as unknown as CustomElementConstructor);
